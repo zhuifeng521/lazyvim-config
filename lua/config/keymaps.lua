@@ -26,6 +26,16 @@ keymap.set("n", "<C-Up>", "<Plug>(VM-Add-Cursor-Up)", { remap = true })
 keymap.set("n", "<C-Down>", "<Plug>(VM-Add-Cursor-Down)", { remap = true })
 keymap.set("n", "<C-Right>", "<Plug>(VM-Find-Under)", { remap = true })
 keymap.set("n", "<C-Left>", "<Plug>(VM-Select-All)", { remap = true })
+-- 快速退出visual或者insert模式
+
+keymap.set("v", "<A-Left>", "<Esc><Esc>")
+keymap.set("v", "<A-Right>", "<Esc><Esc>")
+keymap.set("v", "<A-Up>", "<Esc><Esc>")
+keymap.set("v", "<A-Down>", "<Esc><Esc>")
+keymap.set("i", "<A-Left>", "<Esc><Esc>")
+keymap.set("i", "<A-Right>", "<Esc><Esc>")
+keymap.set("i", "<A-Up>", "<Esc><Esc>")
+keymap.set("i", "<A-Down>", "<Esc><Esc>")
 
 -- CTRL SHIFT + 方向 快速跳转
 keymap.set("i", "<C-S-Up>", "<Up><Up><Up><Up><Up><Up><Up>")
