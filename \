@@ -5,6 +5,9 @@ local keymap = vim.keymap
 
 keymap.set("i", "jj", "<Esc>")
 
+-- 取消部分快捷键
+keymap.del("n", "<C-Up>")
+
 keymap.set("n", "<leader>ro", ":!cscope -Rkb<cr>")
 keymap.set("n", "<leader>rc", ":!ctags -R .<cr>")
 -- 快速选择
@@ -28,6 +31,7 @@ keymap.set("v", "<C-S-Down>", "10j")
 keymap.set("v", "<C-S-Left>", "^")
 keymap.set("v", "<C-S-Right>", "$h")
 -- c-s = :%s/
+
 keymap.set("n", "<A-s>", ":<c-u>%s/\\v//gc<left><left><left><left>")
 keymap.set("v", "<A-s>", ":s/\\v//gc<left><left><left><left>")
 
