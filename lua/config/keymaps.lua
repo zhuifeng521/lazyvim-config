@@ -8,11 +8,24 @@ keymap.set("i", "jj", "<Esc>")
 keymap.set("n", "<leader>ro", ":!cscope -Rkb<cr>")
 keymap.set("n", "<leader>rc", ":!ctags -R .<cr>")
 -- 快速选择
+keymap.set("n", "<S-Up>", "Vk", { noremap = true, silent = true })
+keymap.set("n", "<S-Down>", "Vj", { noremap = true, silent = true })
+keymap.set("v", "<S-Up>", "k", { noremap = true, silent = true })
+keymap.set("v", "<S-Down>", "j", { noremap = true, silent = true })
+keymap.set("n", "<S-Left>", "<Left>vh", { noremap = true, silent = true })
+keymap.set("n", "<S-Right>", "vl", { noremap = true, silent = true })
+keymap.set("i", "<S-Up>", "<esc>vkl", { noremap = true, silent = true })
+keymap.set("i", "<S-Down>", "<esc>lvjh", { noremap = true, silent = true })
+
 keymap.set("n", "<leader>v", "<Plug>(expand_region_expand)")
 keymap.set("n", "<leader>V", "<Plug>(expand_region_shrink)")
-
 keymap.set("v", "<leader>v", "<Plug>(expand_region_expand)")
 keymap.set("v", "<leader>V", "<Plug>(expand_region_shrink)")
+
+keymap.set("n", "<C-Up>", "<Plug>(VM-Add-Cursor-Up)", { remap = true })
+keymap.set("n", "<C-Down>", "<Plug>(VM-Add-Cursor-Down)", { remap = true })
+keymap.set("n", "<C-Right>", "<Plug>(VM-Find-Under)", { remap = true })
+keymap.set("n", "<C-Left>", "<Plug>(VM-Select-All)", { remap = true })
 
 -- CTRL SHIFT + 方向 快速跳转
 keymap.set("i", "<C-S-Up>", "<Up><Up><Up><Up><Up><Up><Up>")
