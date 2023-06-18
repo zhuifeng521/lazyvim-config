@@ -7,6 +7,10 @@ keymap.set("i", "jj", "<Esc>")
 
 keymap.set("n", "<leader>ro", ":!cscope -Rkb<cr>")
 keymap.set("n", "<leader>rc", ":!ctags -R .<cr>")
+
+-- 快速切换中文显示
+keymap.set("n", "<leader>dc", ":e ++enc=cp936<cr>")
+
 -- 快速选择
 keymap.set("n", "<S-Up>", "Vk", { noremap = true, silent = true })
 keymap.set("n", "<S-Down>", "Vj", { noremap = true, silent = true })
