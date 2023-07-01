@@ -8,8 +8,9 @@ keymap.set("i", "jj", "<Esc>")
 keymap.set("n", "<leader>ro", ":!cscope -Rkb<cr>")
 keymap.set("n", "<leader>rc", ":!ctags -R .<cr>")
 
-keymap.set("n", "<leader>tc", ":colorscheme tokyonight-storm<cr>")
-
+keymap.set("n", "<leader>tc", ":colorscheme tokyonight-day<cr>")
+-- 快速预览函数和变量定义
+keymap.set("n", "<leader>cp", ":Vista!!<cr>")
 -- 快速切换中文显示
 keymap.set("n", "<leader>dc", ":e ++enc=cp936<cr>")
 
